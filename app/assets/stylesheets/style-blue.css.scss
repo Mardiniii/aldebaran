@@ -2128,7 +2128,7 @@ hr.double {
 }
 .content-box {
   display: block;
-  text-align: center;
+  text-align: justify;
   overflow: hidden;
   padding: 15px;
   margin-bottom: 5px;
@@ -3656,7 +3656,6 @@ a.thumbnail.active {
   margin: 0 2px;
 }
 .carousel-section {
-  background-image: image-url("slide_back.jpg");
   margin-bottom: 40px;
   overflow: hidden;
 }

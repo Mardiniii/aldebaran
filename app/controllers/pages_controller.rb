@@ -4,6 +4,7 @@ class PagesController < ApplicationController
     @carousel_images = Image.where(image_type: 0)
     @section_images = Image.where(image_type: 1)
     @slide_images = Image.where(image_type: 2)
+    @carousel_background = Image.where(location: "Carousel Background")[0]
   end
 
   def trading_apps

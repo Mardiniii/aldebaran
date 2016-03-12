@@ -1,4 +1,4 @@
-<section class="carousel-section">
+<section class="carousel-section" style="background-image: url(<%= @carousel_background.image.url %>);">
   <div id="carousel-example-generic" class="carousel carousel-razon slide" data-ride="carousel" data-interval="5000">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -65,7 +65,7 @@
             <div class="col-md-6 col-sm-8">
               <div class="carousel-caption">
                 <div class="carousel-text">
-                  <h1 class="animated fadeInDownBig animation-delay-7 carousel-title"><%= @content.slide_3_title %><%= @content.slide_3_title %></h1>
+                  <h1 class="animated fadeInDownBig animation-delay-7 carousel-title"><%= @content.slide_3_title %></h1>
                   <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle"><%= @content.slide_2_subtitle %></h2>
                   <ul class="list-unstyled carousel-list">
                     <li class="animated bounceInLeft animation-delay-11"><%= link_to "<i class='fa fa-check'></i>#{@content.carousel_link_1_text}".html_safe, @content.carousel_link_1, class: "white-text" %></li>
@@ -100,25 +100,25 @@
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <div class="content-box box-default animated fadeInUp animation-delay-10">
-          <h4 class="content-box-title"><%= @content.feature_1_title %></h4>
+          <h4 class="text-center content-box-title"><%= @content.feature_1_title %></h4>
           <p><%= @content.feature_1_text %></p>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
         <div class="content-box box-default animated fadeInUp animation-delay-14">
-          <h4 class="content-box-title"><%= @content.feature_2_title %></h4>
+          <h4 class="text-center content-box-title"><%= @content.feature_2_title %></h4>
           <p><%= @content.feature_2_text %></p>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
         <div class="content-box box-default animated fadeInUp animation-delay-16">
-          <h4 class="content-box-title"><%= @content.feature_3_title %></h4>
+          <h4 class="text-center content-box-title"><%= @content.feature_3_title %></h4>
           <p><%= @content.feature_3_text %></p>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
         <div class="content-box box-default animated fadeInUp animation-delay-12">
-          <h4 class="content-box-title"><%= @content.feature_4_title %></h4>
+          <h4 class="text-center content-box-title"><%= @content.feature_4_title %></h4>
           <p><%= @content.feature_4_text %></p>
         </div>
       </div>
@@ -130,7 +130,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <div class="home-devices">
+        <div class="home-devices text-justify">
           <h3><%= @content.section_1_title %></h3>
           <p><%= @content.section_1_first_paragraph %></p>
           <p><%= @content.section_1_second_paragraph %></p>
@@ -182,7 +182,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="home-devices">
+        <div class="home-devices text-justify">
           <h3><%= @content.section_2_title %></h3>
           <p><%= @content.section_2_first_paragraph %></p>
           <p><%= @content.section_2_second_paragraph %></p>
@@ -202,7 +202,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <div class="home-devices">
+        <div class="home-devices text-justify">
           <h3><%= @content.section_3_title %></h3>
           <p><%= @content.section_3_first_paragraph %></p>
           <p><%= @content.section_3_second_paragraph %></p>
