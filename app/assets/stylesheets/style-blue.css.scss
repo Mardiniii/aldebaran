@@ -5605,6 +5605,8 @@ a.feature-icon:hover {
   padding-top: 70px;
   margin-bottom: 20px;
   text-align: center;
+  background-size: contain;
+  height: 100px;
 }
 .title-logo span {
   color: #0099da;
@@ -6088,6 +6090,7 @@ a.feature-icon:hover {
   background-image: image-url("aldebaran-logo-2.png");
   background-repeat: no-repeat;
   background-position: left center;
+  background-size: contain;
 }
 .header-full-title h1 {
   margin-bottom: 5px;
@@ -6096,6 +6099,7 @@ a.feature-icon:hover {
   word-spacing: -7px;
   color: #000;
   font-size: 32px;
+  margin-left: 78px;
 }
 .header-full-title h1 a {
   color: #000;
@@ -6109,6 +6113,7 @@ a.feature-icon:hover {
   margin-bottom: 15px;
   font-size: 1.2em;
   text-align: center;
+  margin-left: 78px;
 }
 .top-nav {
   float: right;
