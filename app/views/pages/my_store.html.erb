@@ -2,7 +2,7 @@
   <div class="container">
 
     <div class="col-md-4">
-      <h1 class="page-title">Online Store</h1>
+      <h1 class="page-title">Tienda Online</h1>
     </div>
 
     <div class="col-md-4">
@@ -11,7 +11,7 @@
 
     <ol class="breadcrumb pull-right">
       <li><a href='javascript:void(0);'>Online Store</a></li>
-      <li class="active">Trading Products</li>
+      <li class="active">Productos & Servicios</li>
     </ol>  </div>
 </header>
 
@@ -19,24 +19,24 @@
   <div class="row">
     <div class="col-md-3 hidden-sm hidden-xs">
       <div class="ec-filters-menu">
-        <h3 class="section-title no-margin-top">Products</h3>
-        <h4>Select Category</h4>
+        <h3 class="section-title no-margin-top">Productos</h3>
+        <h4>Seleccionar Categoria</h4>
         <ul>
-          <li><a href="javascript:void(0);" class="filter" data-filter="all">All</a></li>
-          <li><a href="javascript:void(0);" class="filter" data-filter=".category-strategy">Strategies</a></li>
-          <li><a href="javascript:void(0);" class="filter" data-filter=".category-portfolio">Portfolios</a></li>
+          <li><a href="javascript:void(0);" class="filter" data-filter="all">Todo</a></li>
+          <li><a href="javascript:void(0);" class="filter" data-filter=".category-strategy">Estrategias</a></li>
+          <li><a href="javascript:void(0);" class="filter" data-filter=".category-portfolio">Portafolios</a></li>
           <li><a href="javascript:void(0);" class="filter" data-filter=".category-indicator">Trading Apps</a></li>
-          <li><a href="javascript:void(0);" class="filter" data-filter=".category-education">Education & Others</a></li>
+          <li><a href="javascript:void(0);" class="filter" data-filter=".category-education">Cursos & Educación</a></li>
         </ul>
-        <h4>Order by</h4>
+        <h4>Ordenar por</h4>
         <ul>
-          <li><a href="javascript:void(0);" class="sort" data-sort="price:asc">Price: Low to High</a></li>
-          <li><a href="javascript:void(0);" class="sort" data-sort="price:desc">Price: High to Low</a></li>
+          <li><a href="javascript:void(0);" class="sort" data-sort="price:asc">Precio: Menor a Mayor</a></li>
+          <li><a href="javascript:void(0);" class="sort" data-sort="price:desc">Precio: Mayor a Menor</a></li>
           <!-- <li><a href="javascript:void(0);" class="sort" data-sort="popularity:desc">Most Popular</a></li> -->
-          <li><a href="javascript:void(0);" class="sort" data-sort="date:desc">Release Date</a></li>
+          <li><a href="javascript:void(0);" class="sort" data-sort="date:desc">Fecha de Desarrollo</a></li>
         </ul>
       </div>
-      <h3 class="section-title">Latest Offers</h3>
+      <h3 class="section-title">Últimos Desarrollos</h3>
       <div class="bxslider-controls">
         <span id="bx-prev5"></span>
         <span id="bx-next5"></span>
@@ -53,7 +53,7 @@
                 <% else %>
                   <span class="label label-primary">Start at <%= number_to_currency(product.price, precision: 0) %></span>
                 <% end %>
-                <%= link_to '<i class="fa fa-shopping-cart"></i> Buy Now'.html_safe, product_path(product), class: "btn btn-ar btn-success btn-sm pull-right" %>
+                <%= link_to '<i class="fa fa-shopping-cart"></i> Comprar'.html_safe, product_path(product), class: "btn btn-ar btn-success btn-sm pull-right" %>
               </div>
             </div>
           </li>

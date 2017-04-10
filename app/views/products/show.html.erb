@@ -31,7 +31,7 @@
           <div class="e-price">$ <span><%= @product.price_one_year %></span>.00 <span class="price-time">One Year</span></div>
           <div class="e-price">$ <span><%= @product.price_open_source %></span>.00 <span class="price-time">Open Code</span></div>
         <% end %>
-        <%= link_to '<i class="fa fa-shopping-cart"></i> Buy Now'.html_safe, new_order_path(product_id: @product.id), class: "btn btn-ar btn-block btn-success" %>
+        <%= link_to '<i class="fa fa-shopping-cart"></i> Comprar Ahora'.html_safe, new_order_path(product_id: @product.id), class: "btn btn-ar btn-block btn-success" %>
         <% if @product.more_info_link != "" %>
           <a href="<%= @product.more_info_link %>" target="_blank" class="btn btn-ar btn-block btn-warning">Download all info about this product</a>
         <% end %>
@@ -45,7 +45,7 @@
             <% else %>
               <span class="label label-primary">Start at <%= number_to_currency(@random_item.price, precision: 0) %></span>
             <% end %>
-            <%= link_to '<i class="fa fa-shopping-cart"></i> Buy Now'.html_safe, new_order_path(product_id: @product.id), class: "btn btn-ar btn-success btn-sm pull-right" %>
+            <%= link_to '<i class="fa fa-shopping-cart"></i> Comprar'.html_safe, new_order_path(product_id: @product.id), class: "btn btn-ar btn-success btn-sm pull-right" %>
           </div>
         </div>
       </div>

@@ -75,7 +75,7 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Production URL and mailer
-  config.action_mailer.default_url_options = { host: 'http://www.aldebarantech.com/' }
+  config.action_mailer.default_url_options = { host: 'http://www.quantsciencetech.com' }
 
   config.action_mailer.delivery_method = :smtp
   # SMTP settings for gmail

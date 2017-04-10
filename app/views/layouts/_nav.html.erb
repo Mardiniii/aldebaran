@@ -13,30 +13,30 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Inicio", root_path %></li>
         <li class="dropdown">
-          <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Trading Products</a>
+          <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Estrategias & Cursos</a>
            <ul class="dropdown-menu dropdown-menu-left">
-            <li><%= link_to "Strategies", pages_strategies_path %></li>
-            <li><%= link_to "Portfolios", pages_portfolios_path %></li>
+            <li><%= link_to "Estrategias", pages_strategies_path %></li>
+            <li><%= link_to "Portafolios", pages_portfolios_path %></li>
             <li><%= link_to "Trading Apps", pages_indicators_path %></li>
-            <li><%= link_to "Education & Others", pages_education_path %></li>
-            <li><%= link_to "See All", pages_trading_apps_path %></li>
+            <li><%= link_to "Cursos & Educación", pages_education_path %></li>
+            <li><%= link_to "Ver todo", pages_trading_apps_path %></li>
           </ul>
         </li>
-        <li><%= link_to "How It Works?", pages_how_it_works_path %></li>
+        <li><%= link_to "Entrenamientos & Educación", pages_how_it_works_path %></li>
         <li><%= link_to "FAQ", pages_faq_path %></li>
-        <li><%= link_to "Store", pages_my_store_path %></li>
+        <li><%= link_to "Tienda", pages_my_store_path %></li>
 
         <li class="dropdown">
-          <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
+          <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Nuestra Empresa</a>
            <ul class="dropdown-menu dropdown-menu-left">
-            <li><%= link_to "About Us", pages_about_us_path %></li>
+            <li><%= link_to "Nuestro Equipo", pages_about_us_path %></li>
             <li><%= link_to "Partnership", pages_partnership_path %></li>
           </ul>
         </li>
-        <li><%= link_to "Contact", pages_contact_path %></li>
-        <li><%= link_to "Blog", "https://medium.com/@aldebarantech", target: '_blank' %></li>
+        <li><%= link_to "Contacto", pages_contact_path %></li>
+        <li><%= link_to "Informes Financieros", "https://medium.com/@quantsciencesas", target: '_blank' %></li>
         <% if user_signed_in? %>
           <% if current_user.admin? %>
             <li class="dropdown">
