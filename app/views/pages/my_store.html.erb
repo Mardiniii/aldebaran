@@ -51,7 +51,7 @@
                 <% if product.education? %>
                   <span class="label label-primary"><%= number_to_currency(product.price, precision: 0) %></span>
                 <% else %>
-                  <span class="label label-primary">Start at <%= number_to_currency(product.price, precision: 0) %></span>
+                  <span class="label label-primary">Desde <%= number_to_currency(product.price, precision: 0) %></span>
                 <% end %>
                 <%= link_to '<i class="fa fa-shopping-cart"></i> Comprar'.html_safe, product_path(product), class: "btn btn-ar btn-success btn-sm pull-right" %>
               </div>
@@ -81,7 +81,7 @@
                 <% else %>
                   <span class="label label-primary">Start at <%= number_to_currency(product.price, precision: 0) %></span>
                 <% end %>
-                <%= link_to '<i class="fa fa-shopping-cart"></i> Buy Now'.html_safe, product_path(product), class: "btn btn-ar btn-success btn-sm pull-right" %>
+                <%= link_to '<i class="fa fa-shopping-cart"></i> Comprar'.html_safe, product_path(product), class: "btn btn-ar btn-success btn-sm pull-right" %>
               </div>
             </div>
           </div>

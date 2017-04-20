@@ -5,7 +5,7 @@
     <ol class="breadcrumb pull-right">
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "Bussiness & Products", pages_trading_apps_path %></li>
-      <li class="active">Products</li>
+      <li class="active">Productos</li>
     </ol>
   </div>
 </header>
@@ -33,9 +33,9 @@
         <% end %>
         <%= link_to '<i class="fa fa-shopping-cart"></i> Comprar Ahora'.html_safe, new_order_path(product_id: @product.id), class: "btn btn-ar btn-block btn-success" %>
         <% if @product.more_info_link != "" %>
-          <a href="<%= @product.more_info_link %>" target="_blank" class="btn btn-ar btn-block btn-warning">Download all info about this product</a>
+          <a href="<%= @product.more_info_link %>" target="_blank" class="btn btn-ar btn-block btn-warning">Descargar toda la información de este producto</a>
         <% end %>
-        <h3 class="right-line">Related Products</h3>
+        <h3 class="right-line">Productos Relacionados</h3>
         <div class="ec-box">
           <div class="ec-box-header"><%= link_to @random_item.title, product_path(@random_item) %></div>
           <%= link_to "<img src='#{@random_item.logo.url(:my_store)}' alt=''>".html_safe, product_path(@random_item) %>
@@ -43,7 +43,7 @@
             <% if @random_item.education? %>
               <span class="label label-primary"><%= number_to_currency(@random_item.price, precision: 0) %></span>
             <% else %>
-              <span class="label label-primary">Start at <%= number_to_currency(@random_item.price, precision: 0) %></span>
+              <span class="label label-primary">Desde <%= number_to_currency(@random_item.price, precision: 0) %></span>
             <% end %>
             <%= link_to '<i class="fa fa-shopping-cart"></i> Comprar'.html_safe, new_order_path(product_id: @product.id), class: "btn btn-ar btn-success btn-sm pull-right" %>
           </div>
@@ -56,7 +56,7 @@
     <!-- <p class="lead lead-lg text-center primary-color margin-bottom">Knows the <strong>Artificial Reason</strong> and surprise yourself</p> -->
     <div class="row">
       <div class="col-md-6">
-        <h2 class="no-margin-top">Product Specifications</h2>
+        <h2 class="no-margin-top">Especificaciones</h2>
         <ol class="service-list list-unstyled">
           <% @specifications.each do |spec| %>
             <li class="wow fadeInUp text-justify"><%= spec %></li>
@@ -85,7 +85,7 @@
               <li><a href="#laptop" data-toggle="tab"><i class="fa fa-bar-chart"></i></a></li>
               <li><a href="#tablet" data-toggle="tab"><i class="fa fa-area-chart"></i></a></li>
             </ul>
-            <p class="text-center">*Click on any icon to change image*</p>
+            <p class="text-center">*Click en cualquier icono para cambiar la imagen*</p>
           </div>
         </div>
         <div class="col-md-8">

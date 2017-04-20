@@ -1,10 +1,10 @@
 <div class="container">
   <div class="row">
-    <h2 class="right-line">You are buying this product</h2>
+    <h2 class="right-line">Tú estas comprando este producto o servicio</h2>
   </div>
   <div class="row">
     <div class="col-md-12">
-      <h3>Please confirm your information and go to PayPal to finish the purchase process.</h3>
+      <h3>Por favor confirma tu información y procede a PayPal para terminar el proceso de compra.</h3>
     </div>
     <div class="col-md-6 col-md-offset-3">
       <div class="product_image text-center">
@@ -12,18 +12,19 @@
         <h2><%= @product.title %></h2>
       </div>
       <div class="field form-group">
-        <p><strong>Name:</strong> <%= current_user.name %></p>
-        <p><strong>Day of Purchase:</strong> <%= @order.created_at.strftime("Purchased on %m/%d/%Y") %></p>
+        <p><strong>Nombre:</strong> <%= current_user.name %></p>
+        <p><strong>´Fecha de Compra:</strong> <%= @order.created_at.strftime("Purchased on %m/%d/%Y") %></p>
         <p><strong>Email:</strong> <%= current_user.email %></p>
-        <p><strong>Trading Software:</strong> <%= @order.trading_software %></p>
-        <p><strong>Customer Number:</strong> <%= @order.customer_id %></p>
+        <p><strong>Producto o Servicio:</strong> <%= @order.trading_software %></p>
+        <p><strong>Número de Usuario:</strong> <%= @order.customer_id %></p>
         <p><strong>Order Status:</strong> <%= @order.status %></p>
         <% if @order.status != "Awaiting Payment" %>
           <p><strong>Shopping Time:</strong> <%= @order.shopping_time %></p>
         <% end %>
       </div>
       <%= hidden_field_tag 'product_id', params[:product_id] %>
-      <p class="text-justify"><strong>*</strong> Choose your product time from 6 months, 1 year or open code(.ELD, TXT) in the next select before you go to PayPal:</p>
+      <p class="text-justify">Si tu producto es de Educación ve directo a PayPal</p>
+      <p class="text-justify"><strong>*</strong> Escoge tu membresía en estrategias desde 6 meses, 1 año o Código Abierto(.ELD, TXT) antes de ir a PayPal:</p><strong> *</strong>
       <% if @order.status == "Awaiting Payment" %>
         <div class="actions form-group text-center">
           <%= @product.pay_pal_button.html_safe %>

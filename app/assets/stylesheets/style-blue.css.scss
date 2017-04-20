@@ -2128,11 +2128,16 @@ hr.double {
 }
 .content-box {
   display: block;
-  text-align: justify;
   overflow: hidden;
+  text-align: left !important;
   padding: 15px;
   margin-bottom: 5px;
 }
+
+.text-left{ 
+  text-align: left !important;
+}
+
 .content-box.box-default {
   background-color: #f6f6f6;
   border: solid 1px #e5e5e5;

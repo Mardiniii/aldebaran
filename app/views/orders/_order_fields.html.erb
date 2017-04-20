@@ -4,15 +4,15 @@
     <h2><%= @product.title %></h2>
   </div>
   <div class="field form-group">
-    <%= order.label :trading_software, "Trading Software:", class: "lead lead-lg" %>
-    <%= order.collection_select :trading_software, Order.trading_softwares.keys, :to_s, :titlecase, { include_blank: "Select One Trading Software" },{ required: true, class: "form-control" } %>
+    <%= order.label :trading_software, "Producto o Servicio:", class: "lead lead-lg" %>
+    <%= order.collection_select :trading_software, Order.trading_softwares.keys, :to_s, :titlecase, { include_blank: "Escoge un Producto o Servicio" },{ required: true, class: "form-control" } %>
   </div>
 
   <div class="field form-group">
-    <%= order.label :customer_id, "Customer Number:", class: "lead lead-lg" %><br>
-    <span style="color: red;">*If you selected Open Code(.ELD,TXT) above please write down 0 as your customer number*</span>
+    <%= order.label :customer_id, "Número de Usuario:", class: "lead lead-lg" %><br>
+    <span style="color: red;">*Si seleccionaste Open Code(.ELD,TXT) escribe 0 como número de usuario*</span>
     <%= order.text_field :customer_id, required: true, :rows => 5, class: "form-control", id: "new_user_email" %>
-    <a href="http://medium.com/@aldebarantech/were-can-i-find-the-customer-id-8f0064a23a82#.etsjq2xoi" target="_blank">* Where can I find the customer number?</a>
+    <a href="http://medium.com/@aldebarantech/were-can-i-find-the-customer-id-8f0064a23a82#.etsjq2xoi" target="_blank">*¿Donde puedo encontrar mi número de usuario?</a>
   </div>
 
   <% if current_user.admin? %>
@@ -32,7 +32,7 @@
       DISCLAIMER<br><br>
       The Client agrees as part of the purchase of the software from the Developer the confidential rules and/or software of a trading system or any of the Aldebaran Tech products for the sole purpose of trading that product in his/her account. Whereas the client agrees to review, examine, inspect or obtain such information as is necessary to use these products only for the purpose described above, and to otherwise hold such information including the rules of the products, confidential pursuant to the terms of this disclaimer. BE IT KNOWN that Developer and Client have the following conditions:<br><br>
       1-The client agrees to hold all confidential or proprietary information, trade secrets, trading methods, processes, formula, or computer programs related to these products in trust and confidence and agree that they shall be used only for the benefit of trading only in the Client’s account and shall not be used for any other purpose or disclosed to any third party without prior authorization from the Developer.<br>
-      2-This information shall not be disclosed to any employee, superior, consultant, or other unless they agree
+      2-This information shall not be disclosed to any employee, superior, consultant, or other unless they agree<br>
       3-Client has no right or authority to sub-license, rent, time-share, lease, lend, sell, or to grant any rights to third parties with respect to the trading systems, software, or Portfolios.<br>
       4-Developer hereby represents and warrants to Licensee that Developer is the owner of the Software or otherwise has the right to grant to Licensee the rights set forth in this disclaimer.<br>
       5-Warranty of Functionality. For a period of your purchase  following delivery of the Software to Licensee (the "Warranty Period"), Developer warrants that the Software shall perform in all material respects according to the Developer's specifications concerning the Software when used with the appropriate computer equipment. In the event of any breach or alleged breach of this warranty, Licensee shall promptly notify Developer and return the Software to Developer at Licensee's expense. Licensee's sole remedy shall be that Developer shall correct the Software so that it operates according to the warranty. This warranty shall not apply to the Software if modified by anyone or if used improperly or on an operating environment not approved by Developer.<br>
@@ -52,13 +52,13 @@
 
   <div class="field form-group">
     <%= order.check_box :accepts_disclaimer, required: true %>
-    <%= order.label :accepts_disclaimer, "I have read and accept all conditions", class: "lead lead-lg" %>
+    <%= order.label :accepts_disclaimer, "Acepto términos y condiciones de uso", class: "lead lead-lg" %>
   </div>
 
   <%= hidden_field_tag 'product_id', params[:product_id] %>
 
   <div class="actions form-group text-center">
-    <%= order.submit "Save Order Information", class: "btn btn-ar btn-lg btn-success" %>
+    <%= order.submit "Guardar información de la orden", class: "btn btn-ar btn-lg btn-success" %>
   </div>
 </div>
 <style>

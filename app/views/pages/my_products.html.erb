@@ -1,10 +1,10 @@
 <header class="main-header">
   <div class="container">
-    <h1 class="page-title">My Products</h1>
+    <h1 class="page-title">Mis Productos</h1>
 
     <ol class="breadcrumb pull-right">
       <li><%= link_to "My Account", edit_user_registration_path(current_user) %></li>
-      <li class="active">My Products</li>
+      <li class="active">Mis Productos</li>
     </ol>
   </div>
 </header>
@@ -100,7 +100,7 @@
               <div class="ec-box-header"><%= link_to product.title, product_path(product) %></div>
               <%= link_to "<img src='#{product.logo.url(:my_store)}' alt="">".html_safe, product_path(product) %>
               <div class="ec-box-footer">
-                <span class="label label-primary">Start at $ <%= product.price %></span>
+                <span class="label label-primary">Desde $ <%= product.price %></span>
                 <%= link_to '<i class="fa fa-shopping-cart"></i> Comprar'.html_safe, product_path(product), class: "btn btn-ar btn-success btn-sm pull-right" %>
               </div>
             </div>
